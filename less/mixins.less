@@ -1,1 +1,18 @@
 // Mixins in here
+.if() {
+  display: flex;
+}
+.if-col() {
+  flex-direction: column;
+}
+.if-row() {
+  flex-direction: row;
+}
+.is-flex {
+  .if();
+  flex: 1;
+}
+.is-flex-row {
+  .if();
+  .if-col();
+}
