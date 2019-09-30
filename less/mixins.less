@@ -2,17 +2,23 @@
 .if() {
   display: flex;
 }
-.if-col() {
-  flex-direction: column;
+.if-flow(@fl,@fw) {
+  flex-flow: @fl @fw;
 }
-.if-row() {
-  flex-direction: row;
+.i-br(@br) {
+  -webkit-border-radius: @br;
+  -moz-border-radius: @br;
+  border-radius: @br;
 }
-.is-flex {
-  .if();
-  flex: 1;
+.btn-const() {
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.5rem;
 }
-.is-flex-row {
-  .if();
-  .if-col();
+.button(@bg-clr,@clr,@wdh) {
+  background-color: @bg-clr;
+  color: @clr;
+  width: @wdh;
+  .btn-const();
 }

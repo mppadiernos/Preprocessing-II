@@ -1,0 +1,57 @@
+@media @mobile {
+  .container {
+    max-width: 500px;
+  }
+  header {
+    .nav-menu {
+      .if-flow(row,wrap);
+      li {
+        &.site-branding {
+          width: 100%;
+          text-align: center;
+        }
+        &.menu-item {
+          width: 25%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .home {
+    padding: 0 20px;
+    .hero-section {
+      .img-content {
+        width: auto;
+      }
+    }
+    .content-section {
+      .text-content {
+        width: 100%;
+      }
+      .img-content {
+        width: 100%;
+        padding-left: 0;
+      }
+      &.inverse-content {
+        flex-direction: column-reverse;
+        .img-content {
+          padding-right: 0;
+        }
+      }
+    }
+    .content-destination {
+      width: 100%;
+    }
+    .content-pick {
+      flex-wrap: wrap;
+      .destination {
+        width: 100%;
+        .btn {
+          width: 100%;
+        }
+      }
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
