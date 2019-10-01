@@ -297,6 +297,9 @@ header .nav-container .nav-menu li.nav-item a {
     width: 100%;
     padding-left: 0;
   }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
   .home .content-section.inverse-content {
     flex-direction: column-reverse;
   }
