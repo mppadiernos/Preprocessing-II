@@ -1,5 +1,14 @@
 .home {
-
+  .hero-section {
+    border-bottom: 2px dashed @navigation-border;
+    .img-content {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .text-content {
+      padding-bottom: 20px;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -18,7 +27,7 @@
       padding-left: 1%;
 
       img {
-        border-radius: 10px;
+        .i-br(10px);
       }
     }
   }
@@ -56,6 +65,9 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .button(@button-bg, white, 20rem);
+      }
     }
   }
 }// home

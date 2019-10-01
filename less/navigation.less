@@ -1,1 +1,30 @@
 // Navigation Styles here
+header {
+  border-bottom: 2px dashed @navigation-border;
+  .nav-container {
+    .nav-menu {
+      .if();
+      align-items: center;
+      li {
+        &.nav-item {
+          padding: 20px 0;
+          font-size: 1.6rem;
+          &.site-branding {
+            font-family: 'Indie Flower', cursive;
+            font-size: 4rem;
+            margin-right: auto;
+          }
+          &.menu-item {
+            a {
+              padding: 15px;
+            }
+          }
+          a {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
